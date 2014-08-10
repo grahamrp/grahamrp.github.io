@@ -1,10 +1,16 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Graham Parsons
+email: graham@grahamrp.com
+description: "Data analysis, visualisation and statistics in Higher Education."
 baseurl: ""
-url: "http://yourdomain.com"
+url: "https://grahamrp.github.io/"
+
+# Includes an icon in the footer for each user name you enter
+footer-links:
+    github: grahamrp
+    twitter: GRPeely
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
