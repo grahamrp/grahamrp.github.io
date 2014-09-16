@@ -13,7 +13,7 @@ But in this first part I want to describe the hierarchical clustering technique 
 
 About Hierarchical Clustering
 -----------------------------
-The version of clustering I'll be using starts by grouping together the two "closest" entities (in this case entities are universities) and then proceeds incrementally by taking the next two closest entities and grouping them together, and so on. The "hierarchical" part comes when the groups get treated as entities in their own right, and we end up with groups of groups of groups, etc..
+The version of clustering I'll be using starts by grouping together the two "closest" entities (in this case entities are universities) and then proceeds incrementally by taking the next two closest entities and grouping them together, and so on. The "hierarchical" part comes when the groups get treated as entities in their own right, and we end up with groups of groups of groups, etc.
 
 A trivial example should help to illustrate how it works and some of the issues. I'll create a simple dataset of the Simpsons family, measuring each member on just two variables -- age and intelligence.
 
