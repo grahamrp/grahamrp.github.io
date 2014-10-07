@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "University Clustering using the Guardian University Guide 2015: Part 1"
-date: 2014-09-15 00:00:01
+date: 2014-09-14 
 ---
 
-This is the first in a series of posts about clustering universities using data from the Guardian University Guide 2015. I'll be addressing the following
+This is the first in a two-part series of posts about clustering universities using data from the Guardian University Guide 2015. I'll be addressing the following
 
 - Are there any clear clusters of universities based on the Guardian metrics?
-- If so, are the clusters interesting?
+- If so, do the clusters have any interesting characteristics?
 
 But in this first part I want to describe the hierarchical clustering technique and discuss the visualising of clusters using dendrograms.
 
@@ -84,7 +84,7 @@ Dendrogram Issues
 -----------------
 Note there is no x-axis on the dendrogram -- it does not matter where the entities sit in the horizontal. For example, if Marge and Homer flipped places the dendrogram would be encoding exactly the same information. This is the main difficulty I have with interpreting dendrograms -- the x-axis does not encode information about clusters, at least not explicitly. The whole diagram can be viewed like it was a hanging mobile with every entity spinning around the centre of its supporting horizontal beam. I find it hard to keep this in mind whilst looking at the diagram. What seems to make it worse is that the entities that are most like each other need to be placed side by side on the diagram to make the layout tidy, so in some ways the x-axis *does* encode some information. That said, the dendrogram still seems to be the best visualisation we have for encoding this type of information.
 
-Now that the hierarchical clustering technique is outlined, in Part 2 I will apply it to UK universities using the Guardian University Guide 2015 dataset and experiment with some dendrogram visualisations.
+Now that the hierarchical clustering technique is outlined, in [Part 2]({% post_url 2014-10-05-clustering-universities-with-guardian-2015-part-2 %}) I will apply it to UK universities using the Guardian University Guide 2015 dataset and experiment with some dendrogram visualisations.
 
 
 
