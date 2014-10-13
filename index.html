@@ -10,7 +10,17 @@ layout: default
     {% for post in site.posts %}
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+            <p>
+            {% if post.thumbnail %}
+            <img src="{{ post.thumbnail }}" style="height: 180px" align="center" />
+            {% else %}
+            <img src="/assets/nothumbnail.jpg"
+             style="height: 180px" align="center" />
+                {% endif %}
+                </p>
+        
+        </a>
       </li>
     {% endfor %}
   </ul>

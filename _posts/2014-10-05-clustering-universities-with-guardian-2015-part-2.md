@@ -2,6 +2,7 @@
 layout: post
 title: "University Clustering using the Guardian University Guide 2015: Part 2"
 date: 2014-10-05 
+thumbnail: assets/clusterthumbnail.png
 ---
 
 This is the second in a two-part series of posts about clustering universities using data from the Guardian University Guide 2015. I'll be addressing the following
