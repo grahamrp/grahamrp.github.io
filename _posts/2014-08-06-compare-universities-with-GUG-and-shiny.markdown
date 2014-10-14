@@ -2,6 +2,7 @@
 layout: post
 title:  "Comparing universities using the Guardian University Guide 2015"
 date:   2014-08-06 19:31:55
+thumbnail: assets/rangechart_thumbnail.png
 categories:
 - league tables
 - shiny
