@@ -163,7 +163,7 @@ title('Main 2 clusters', cex.main = 0.8)
 plot(hcluster,
      labels = FALSE,  # remove labels
      ann = FALSE)  # remove annotations
-rect.hclust(hcluster, k = 4) 
+rect.hclust(hcluster, k = 3) 
 title('Main 3 clusters', cex.main = 0.8) 
 {% endhighlight %}
 
@@ -241,7 +241,7 @@ plot(as.phylo(hcluster), type = 'phylo', cex = 0.5,
      tip.color = cols,  
      font = 1, rotate.tree = 10, no.margin = TRUE)
 legend('topleft', legend = group_colours$group, col = group_colours$colour, 
-       fill = group_colours$colour, bty = 'n', border = 0, cex = 0.5)
+       fill = group_colours$colour, bty = 'n', border = 0, cex = 0.6)
 {% endhighlight %}
 
 ![center](/../figs/2014-10-05-clustering-universities-with-guardian-2015-part-2/coloured_by_group.png) 
@@ -254,10 +254,9 @@ It can be difficult to differentiate between each cluster using the dendrogram a
 {% highlight r %}
 plot(as.phylo(hcluster), type = 'un', cex = 0.4, 
      tip.color = cols, lab4ut = 'axial', 
-     font = 1, rotate.tree = 10, mar = c(0, 0, 1, 0))
+     font = 1, rotate.tree = 10, no.margin = TRUE)
 legend('topleft', legend = group_colours$group, fill = group_colours$colour, 
-       bty = 'n', border = 0, cex = 0.5)
-title('Coloured by Mission Group', cex.main = 0.6)
+       title = 'Coloured by Mission Group', bty = 'n', border = 0, cex = 0.6)
 {% endhighlight %}
 
 ![center](/../figs/2014-10-05-clustering-universities-with-guardian-2015-part-2/coloured_by_group2.png) 
@@ -268,9 +267,9 @@ One group that looks interesting is the other "Russell/1994" cluster at the top-
 {% highlight r %}
 plot(as.phylo(hcluster), type = 'un', cex = 0.4, 
      tip.color = cutree(hcluster, k = 7), lab4ut = 'axial', 
-     font = 1, rotate.tree = 10, mar = c(0, 0, 1, 0))
-legend('topleft', legend = 1:7, fill = 1:7, bty = 'n', border = 0, cex = 0.5)
-title('Coloured by Cluster Group', cex.main = 0.6)
+     font = 1, rotate.tree = 10, no.margin = TRUE)
+legend('topleft', legend = 1:7, fill = 1:7, bty = 'n', border = 0, cex = 0.6,
+       title = 'Coloured by Cluster Group')
 {% endhighlight %}
 
 ![center](/../figs/2014-10-05-clustering-universities-with-guardian-2015-part-2/coloured_by_cluster.png) 
