@@ -120,7 +120,7 @@ fa.plot(fa.nfact2, labels = rownames(fa.nfact2$loadings), pos = 3, title = NULL,
 
 ![center](/../figs/2015-02-08-exploratory-factor-analysis/unnamed-chunk-3-1.png) 
 
-`career`, `ssr`, `tariff`, and `spend` are all fairly close together and heavily related to the first factor (on the right of the x-axis of PA1). `nss.all` and `nss.teach` are plotted on top of eachother, and are heavily related to the second factor (high on the y-axis of PA2). `value` and `nss.feedback` are a bit further away from the other variables and not that well represented by either factor.
+`career`, `ssr`, `tariff`, and `spend` are all fairly close together and heavily related to the first factor (on the right of the x-axis of PA1). `nss.all` and `nss.teach` are plotted on top of each other, and are heavily related to the second factor (high on the y-axis of PA2). `value` and `nss.feedback` are a bit further away from the other variables and not that well represented by either factor.
 
 A simplified way of viewing the relationships between the 2 factors and the 8 variables is given by `fa.diagram()`. Using `simple = TRUE` shows just the relationships between the factors and the variables that they are most closely related to.
 
@@ -135,4 +135,4 @@ We can see more clearly now that the National Student Survey measures are strong
 
 Conclusion
 ----------
-It is interesting that the factor analysis has managed to draw out two underlying factors of the Guardian league table measures, particularly the one factor related primarily to student satisfaction (the other factor encompassing "all the rest"). The high correlation between students' satisfaction overall (`nss.all`) and their satisfaction with teaching quality (`nss.teach`) might suggest that one of them could be removed from the measures, to leave just 7, without making much difference to the rankings. Satisfaction with feedback (`nss.feedback`) and value-added (`value`) remain fairly independet from the other measures, suggesting that they represent a quality unique to the other variables.
+It is interesting that the factor analysis has managed to draw out two underlying factors of the Guardian league table measures, particularly the one factor related primarily to student satisfaction (the other factor encompassing "all the rest"). The high correlation between students' satisfaction overall (`nss.all`) and their satisfaction with teaching quality (`nss.teach`) might suggest that one of them could be removed from the measures, to leave just 7, without making much difference to the rankings. Satisfaction with feedback (`nss.feedback`) and value-added (`value`) remain fairly independent from the other measures, suggesting that they represent a quality unique to the other variables.
