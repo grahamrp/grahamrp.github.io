@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscript
+#!/Library/Frameworks/R.framework/Resources/Rscript
  
  input <- commandArgs(trailingOnly = TRUE)
  KnitPost <- function(input, base.url = "/") {
