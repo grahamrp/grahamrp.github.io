@@ -95,9 +95,9 @@ Now that we have a model to represent the data we are able to interrogate it muc
 
 However, the chart above illustrates the problem with modelling without visualisation. The approximation that has been made (drawing a line of best fit across all three years) has resulted in some institutions being identified as steady climbers but in fact their behaviour is not  necessarily *steady*, for example Leeds Trinity actually fell from 2014 to 2015 but then jumped significantly in 2016. The detail is lost in the model, but is clear in the visualisation.
 
-One way of refining the model to get the *steady* climbers is to use its R^2^ value in concert with the slope. The R^2^ value measures how well the model fits the data, taking a value from 0 to 1. Models with a high r-squared will fit the data closely, and in this case will look more like a straight line. For example, Leeds Trinity has a steep upward slope (`r filter(scores_per_year, inst == 'Leeds Trinity')$score_per_year` points per year) but doesn't look much like a straight line (**R^2^ `r round(filter(scores_per_year, inst == 'Leeds Trinity')$r.squared, 2)`**) whereas Falmouth has a steep slope (`r filter(scores_per_year, inst == 'Falmouth')$score_per_year` points per year) but also looks more like a straight line (**R^2^ `r round(filter(scores_per_year, inst == 'Falmouth')$r.squared, 2)`**).
+One way of refining the model to get the *steady* climbers is to use its R-squared value in concert with the slope. The R-squared value measures how well the model fits the data, taking a value from 0 to 1. Models with a high r-squared will fit the data closely, and in this case will look more like a straight line. For example, Leeds Trinity has a steep upward slope (`r filter(scores_per_year, inst == 'Leeds Trinity')$score_per_year` points per year) but doesn't look much like a straight line (**R-squared `r round(filter(scores_per_year, inst == 'Leeds Trinity')$r.squared, 2)`**) whereas Falmouth has a steep slope (`r filter(scores_per_year, inst == 'Falmouth')$score_per_year` points per year) but also looks more like a straight line (**R-squared `r round(filter(scores_per_year, inst == 'Falmouth')$r.squared, 2)`**).
 
-We want institutions whose trajectory looks like a straight line *and* is sloped upward, so a high R^2^ and a high slope estimate.
+We want institutions whose trajectory looks like a straight line *and* is sloped upward, so a high R-squared and a high slope estimate.
 
 ```{r line_chart_steady_and_steep, fig.height=6}
 scores_per_year %>% 
@@ -113,7 +113,7 @@ scores_per_year %>%
     ggtitle('Steady Climbers')
 ```
 
-And we've done it! The institutions in the plot above are "steady" (I've chosen an R^2^ of at least 0.95) whilst climbing the table at the fastest rate.
+And we've done it! The institutions in the plot above are "steady" (I've chosen an R-squared of at least 0.95) whilst climbing the table at the fastest rate.
 
 Bonus Material -- Combining Both Approaches
 -------------------------------------------
